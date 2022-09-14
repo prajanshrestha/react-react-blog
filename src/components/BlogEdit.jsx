@@ -31,29 +31,29 @@ const BlogEdit = () => {
         <div className='create'> 
             <h2>Edit blog</h2>
             <form onSubmit={submitBlogEditForm}>
-            <label>Blog title:</label>
-            <input 
-                type="text" 
-                required
-                value={title}
-                onChange={(e) => setTitle(e.target.value)}
-            />
-            <label>Blog body:</label>
-            <textarea 
-                required
-                value={body}
-                onChange={(e) => setBody(e.target.value)}
-            >
-            </textarea>
-            <label>Blog author:</label>
-            <select 
-                value={author}
-                onChange={(e) => setAuthor(e.target.value)}
-            >
-                <option value="mario">Mario</option>
-                <option value="yoshi">Yoshi</option>
-            </select>
-            <button>Edit Blog</button>
+                <label>Blog title:</label>
+                <input 
+                    type="text" 
+                    required
+                    value={title}
+                    onChange={(e) => setTitle(e.target.value)}
+                />
+                <label>Blog body:</label>
+                <textarea 
+                    required
+                    value={body}
+                    onChange={(e) => setBody(e.target.value)}
+                >
+                </textarea>
+                <label>Blog author:</label>
+                <select 
+                    value={author}
+                    onChange={(e) => setAuthor(e.target.value)}
+                >
+                    <option value="mario">Mario</option>
+                    <option value="yoshi">Yoshi</option>
+                </select>
+                <button>Edit Blog</button>
             </form>
         </div>
     );
